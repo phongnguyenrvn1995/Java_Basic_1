@@ -1,0 +1,26 @@
+1. Tạo 1 class quản lý thông tin của PHƯƠNG TIỆN GIAO THÔNG:
+	- Bao gồm các thông tin: 
+		+ ID phương tiện.
+		+ Tên phương tiện.
+		+ Loại (giá trị chỉ đc 1 trong 4 loại: 2 BÁNH, 3 BÁNH, 4 BÁNH & KHÁC)		
+		+ Hãng (giá trị chỉ đc 1 trong 5 loại: TOYOTA, HONDA, FORD, MEC & KHÁC)
+		
+		
+2. Tạo constructor cho class trên, lưu ý constructor bao gồm cả 4 thông tin.
+
+3. Tạo một class factory (dặt tên tùy ý), 
+	có 1 method static trả về một List có sẵn 20 phương tiện.
+	các phương tiện này tạo tùy thích, phải đảm bảo đa dạng LOẠI, HÃNG
+	không đc trùng ID.
+	
+4. Tạo 1 class util (tên tùy ý), có các method static sau:
+	- filter theo HÃNG:
+		+ input (parameters): LIST XE, HÃNG.
+		+ output (return): LIST XE đã filter.
+		+ lưu ý, k đc làm ảnh hưởng đến LIST XE đc truyền vào trong INPUT, phải tạo và return 1 LIST mới hoàn toàn.
+		
+	- filter theo LOẠI:
+		+ input (parameters): LIST XE, LOẠI.
+		+ output (return): LIST XE đã filter.
+		+ lưu ý, k đc làm ảnh hưởng đến LIST XE đc truyền vào trong INPUT, phải tạo và return 1 LIST mới hoàn toàn.
+		
