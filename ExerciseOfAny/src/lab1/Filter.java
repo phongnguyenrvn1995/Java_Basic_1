@@ -23,19 +23,5 @@ public class Filter {
         return listType;
     }
 
-    public static void main(String[] args) {
 
-//        ListVehicle.DanhSach();
-//
-//        int size=ListVehicle.DanhSach().size();
-
-        for (int i = 0; i < ListVehicle.DanhSach().size(); i++) {
-            System.out.println(filterCompany(ListVehicle.DanhSach(), "HONDA").get(i));
-        }
-        System.out.println();
-        for (int i = 0; i < ListVehicle.DanhSach().size(); i++) {
-            System.out.println(filterType(ListVehicle.DanhSach(), "3 bánh"));
-        }
-
-    }
 }
