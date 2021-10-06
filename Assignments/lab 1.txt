@@ -23,4 +23,22 @@
 		+ input (parameters): LIST XE, LOẠI.
 		+ output (return): LIST XE đã filter.
 		+ lưu ý, k đc làm ảnh hưởng đến LIST XE đc truyền vào trong INPUT, phải tạo và return 1 LIST mới hoàn toàn.
+=====================================================================================================================	
+5. Tạo 1 Class Taxi, kế thừa những thông tin sẵn có của Class ở bài #1
+	- Taxi luôn có 4 bánh.
+	- Có thêm các thông tin sau:
+		+ Số chỗ ngồi
+		+ Tên chủ công ty taxi (giá trị chỉ đc: MAI LINH, VINA SUN, GRAB, KHÁC)
 		
+6. Tạo 1 Class factory (dặt tên tùy ý), 
+	có 1 method static trả về một List có sẵn 20 taxi, đảm bảo đa dạng số chỗ ngồi & công ty cấp dịch vụ.
+	không đc trùng ID với nhau, và k đc trùng ID với các xe ở bài #3
+	
+7. Tạo 1 class search taxi (tên tùy ý), có các method static sau:
+	- Search theo số lượng chỗ ngồi. (tự suy nghĩ input & output)
+	- Search theo công ty cấp dịch vụ. (tự suy nghĩ input & output)
+	- Search theo công ty & số lượng chỗ ngồi.
+		+ input (parameters): LIST TAXI, CÔNG TY, SỐ CHỖ
+		+ output (return): danh sách các taxi thõa điều kiện search.
+		
+	* lưu ý, k đc làm ảnh hưởng đến LIST XE đc truyền vào trong INPUT, phải tạo và return 1 LIST mới hoàn toàn.
