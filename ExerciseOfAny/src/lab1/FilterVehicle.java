@@ -2,7 +2,7 @@ package lab1;
 
 import java.util.ArrayList;
 
-public class Filter {
+public class FilterVehicle {
     public static ArrayList<Vehicle> filterCompany(ArrayList<Vehicle> list, String company) {
         ArrayList<Vehicle> listCompany = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {

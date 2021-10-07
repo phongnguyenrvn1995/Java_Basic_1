@@ -9,17 +9,23 @@ public class Taxi extends Vehicle {
     public static final String COM_GRAB="GRAB";
     public static final String COM_DIFF="KHÁC";
 
+    public static final int  T_4_SEAT=4;
+    public static final int  T_5_SEAT=5;
+    public static final int  T_7_SEAT=7;
+    public static final int  T_9_SEAT=9;
+
 
     //contractor của lớp cha có những param nào thì contractor con cũng phải có đủ
     public Taxi(int id, String name, int type, String company,int numberOfSeat, String companyTaxi) {
-        super(id,name,TYPE_4_WHEEL,company);
+        super(id,name,type,company);
+        setType(type);
         this.numberOfSeat = numberOfSeat;
         this.companyTaxi = companyTaxi;
     }
 
     @Override
-    public int getType() {
-        return super.getType();
+    public void setType(int type) {
+        super.setType(TYPE_4_WHEEL);
     }
 
     public int getNumberOfSeat() {
@@ -35,7 +41,18 @@ public class Taxi extends Vehicle {
     }
 
     public void setCompanyTaxi(String companyTaxi) {
-        this.companyTaxi = companyTaxi;
+        switch (companyTaxi){
+            case COM_MAILINH:
+            case COM_VINASUN:
+            case COM_GRAB:
+            case COM_DIFF:
+                this.companyTaxi = companyTaxi;
+                break;
+            default:
+                System.out.println("setCompanyTaxi failed");
+                break;
+        }
+
     }
 }
 
