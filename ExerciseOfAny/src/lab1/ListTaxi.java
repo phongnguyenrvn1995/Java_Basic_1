@@ -46,7 +46,6 @@ public class ListTaxi {
         list.add(taxi18);
         list.add(taxi19);
         list.add(taxi20);
-
         return list;
     }
 
