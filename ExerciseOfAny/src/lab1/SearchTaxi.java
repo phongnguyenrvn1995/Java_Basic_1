@@ -26,7 +26,7 @@ public class SearchTaxi {
     public static ArrayList<Taxi> searchCompanySeat(ArrayList<Taxi> list, String companyTaxi, int numberOfSeat) {
         ArrayList<Taxi> listCompanySeat = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getCompanyTaxi().equals(companyTaxi) || list.get(i).getNumberOfSeat() == numberOfSeat) {
+            if (list.get(i).getCompanyTaxi().equals(companyTaxi) && list.get(i).getNumberOfSeat() == numberOfSeat) {
                 listCompanySeat.add(list.get(i));
             }
         }

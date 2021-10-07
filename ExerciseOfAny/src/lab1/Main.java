@@ -8,7 +8,7 @@ public class Main {
 
 
         // làm thao tác với db cần biến để hứng dữ liệu (tránh bị lỗi bất ngờ)
-        ArrayList<Vehicle> list = ListVehicle.danhSach(); //list chuẩn
+        /*ArrayList<Vehicle> list = ListVehicle.danhSach(); //list chuẩn
         //tạo list để chứa danh sách sau khi filter
         ArrayList<Vehicle> listHonda = FilterVehicle.filterCompany(list, Vehicle.COM_HONDA);
         //in ra danh sách đó
@@ -30,20 +30,20 @@ public class Main {
         for (int i = 0; i < list4Wheel.size(); i++) {
             System.out.println(list4Wheel.get(i).getName() + " " + list4Wheel.get(i).getType());
         }
-
+*/
         System.out.println();
         ArrayList<Taxi> listTaxi = ListTaxi.listTaxi();
-        ArrayList<Taxi> list5Seat = SearchTaxi.searchSeat(listTaxi, Taxi.T_5_SEAT);
+        /*ArrayList<Taxi> list5Seat = SearchTaxi.searchSeat(listTaxi, Taxi.T_5_SEAT);
         for (int i = 0; i < list5Seat.size(); i++) {
             System.out.println(list5Seat.get(i).getName() + " has " + list5Seat.get(i).getNumberOfSeat() + " seat");
-        }
-        System.out.println();
+        }*/
+        /*System.out.println();
 
         ArrayList<Taxi> listGrab = SearchTaxi.searchCompayTaxi(listTaxi, Taxi.COM_GRAB);
         for (int i = 0; i < listGrab.size(); i++) {
             System.out.println(listGrab.get(i).getName() + "    " + listGrab.get(i).getCompanyTaxi());
         }
-        System.out.println();
+        System.out.println();*/
 
         ArrayList<Taxi> listComSeat = SearchTaxi.searchCompanySeat(listTaxi, Taxi.COM_GRAB, Taxi.T_5_SEAT);
         for (int i = 0; i < listComSeat.size(); i++) {
