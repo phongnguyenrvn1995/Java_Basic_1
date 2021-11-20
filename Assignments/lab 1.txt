@@ -42,3 +42,33 @@
 		+ output (return): danh sách các taxi thõa điều kiện search.
 		
 	* lưu ý, k đc làm ảnh hưởng đến LIST XE đc truyền vào trong INPUT, phải tạo và return 1 LIST mới hoàn toàn.
+
+=====================================================================================================================
+8. Tạo 1 Class Truck, kế thừa những thông tin sẵn có của Class ở bài #1
+	- Truck luôn có 10 bánh.
+	- Có thêm các thông tin sau:
+		+ Tải trọng: 40 khối, 50 khối hoặc 60 khối.
+		+ Tên Công Ty: Nam Long, Hòa Bình, Vinaconex, LICOGI hoặc khác.
+		
+9. Tạo 1 Class factory (dặt tên tùy ý), 
+	có 1 method static trả về một List có sẵn 20 Truck, đảm bảo đa dạng tải trọng & công ty cấp dịch vụ.
+	không đc trùng ID với nhau, và k đc trùng ID với các xe ở bài #3 #6
+	
+10. Tạo 1 class search truck (tên tùy ý), có các method static sau:
+	- Search theo số tải trọng. (tự suy nghĩ input & output)
+	- Search theo công ty cấp dịch vụ. (tự suy nghĩ input & output)
+	- Search theo công ty & tải trọng. (tự suy nghĩ input & output)
+		
+	* lưu ý, k đc làm ảnh hưởng đến LIST XE đc truyền vào trong INPUT, phải tạo và return 1 LIST mới hoàn toàn.
+	
+=====================================================================================================================
+11. Trong class #4, tạo thêm 1 method lưu 1 PHƯƠNG TIỆN GIAO THÔNG vào file:
+	- input: PHƯƠNG TIỆN GIAO THÔNG
+	- output: thành công hay không (boolean)
+	
+	* Lưu ý, tât cả các PHƯƠNG TIỆN GIAO THÔNG đều lưu vào cùng 1 file (tên tự đặt)
+			save dạng append file, tức khi gọi meothod save n lần, thì trong file sẽ lưu n xe, chứ k đc xóa xe đã lưu trc đó.
+			
+12. Trong class #4, tạo thêm 1 method đọc danh sách từ file ở #11 -> gán vào 1 List PHƯƠNG TIỆN GIAO THÔNG
+	- input: 
+	- output: List PHƯƠNG TIỆN GIAO THÔNG.
